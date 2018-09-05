@@ -1,5 +1,5 @@
 # myjob
-Projeto de Tópicos Especiais em Programação lecionada pelo Profº Fabrício
+Projeto de Tópicos Especiais em Programação lecionada pelo Profº Carlos Henrique Bughi
 
 
 #Running
