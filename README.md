@@ -1,13 +1,13 @@
 # myjob
 Projeto de Tópicos Especiais em Programação lecionada pelo Profº Carlos Henrique Bughi
 
-#Technologies Used
+# Technologies Used
 
 1. Java 
 2. Angular 6 (require NodeJS)
 
 
-#Preparing Dev Envoirment
+# Preparing Dev Envoirment
 
 1. Install NodeJS under https://nodejs.org/en/download/
 2. Go to the project folder and run
@@ -16,7 +16,7 @@ cd client
 npm install
 ```
 
-#Running the Project
+# Running the Project
 
 1. Go to the project folder and run
 ```
