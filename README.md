@@ -1,10 +1,24 @@
 # myjob
 Projeto de Tópicos Especiais em Programação lecionada pelo Profº Carlos Henrique Bughi
 
+#Technologies Used
 
-#Running
+1. Java 
+2. Angular 6 (require NodeJS)
 
-frontend (Angular)
+
+#Preparing Dev Envoirment
+
+1. Install NodeJS under https://nodejs.org/en/download/
+2. Go to the project folder and run
+```
+cd client
+npm install
+```
+
+#Running the Project
+
+1. Go to the project folder and run
 ```
 cd client
 ng serve
