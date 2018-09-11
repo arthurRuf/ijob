@@ -28,6 +28,8 @@ sudo apt-get install -y build-essential
 npm install -g @angular/cli sass #If your are running it on Linux or MacOS, you will need to run with SUDO
 cd client
 npm install
+ng update @angular/cli
+ng update @angular/core
 ```
 
 # Running the Project
