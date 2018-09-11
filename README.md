@@ -7,21 +7,25 @@ Projeto de Tópicos Especiais em Programação lecionada pelo Profº Carlos Henr
 2. Angular 6 (require NodeJS)
 
 
-# Installing
+# Installing Front-End
 
 ## Linux
 ```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
-sudo npm install -g @angular/cli
 ```
+
+## Windows
+
+1. Install NodeJS, then open the terminal
 
 # Preparing Dev Envoirment
 
 1. Install NodeJS under https://nodejs.org/en/download/
 2. Go to the project folder and run
 ```
+npm install -g @angular/cli sass #If your are running it on Linux or MacOS, you will need to run with SUDO
 cd client
 npm install
 ```
