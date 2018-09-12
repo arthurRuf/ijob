@@ -12,6 +12,7 @@ import { CustomerHomeComponent } from './customer-home/customer-home.component';
 
 //Provider
 import { ProviderHomeComponent } from './provider-home/provider-home.component';
+import {CustomerSearchComponent} from "./customer-search/customer-search.component";
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   //Customer
   { path: 'customer', redirectTo: '/customer/home', pathMatch: 'full'},
   { path: 'customer/home', component: CustomerHomeComponent },
+  { path: 'customer/search', component: CustomerSearchComponent },
 
   //Provider
   { path: 'provider', redirectTo: '/provider/home', pathMatch: 'full'},

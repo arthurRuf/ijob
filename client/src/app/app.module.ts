@@ -57,6 +57,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ProviderHomeComponent } from './provider-home/provider-home.component';
 import { CustomerHomeComponent } from './customer-home/customer-home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CustomerSearchComponent } from './customer-search/customer-search.component';
 
 
 
@@ -118,6 +119,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ProviderHomeComponent,
     CustomerHomeComponent,
     PageNotFoundComponent,
+    CustomerSearchComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

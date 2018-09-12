@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 export interface Sector {
   value: string;
   viewValue: string;
+  viewImage: string;
 }
 
 @Component({

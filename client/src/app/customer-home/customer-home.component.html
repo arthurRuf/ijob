@@ -1,5 +1,37 @@
-<div class="myjob-container">
+<div class="container myjob-container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <form class="myjob-form search-form" routerLink="/customer/search">
+        <mat-form-field class="">
+          <input class="search-form-input" matInput placeholder="Pesquisar" value="">
+        </mat-form-field>
+        <button mat-button>
+          <mat-icon aria-label="Pesquisar">search</mat-icon>
+        </button>
+      </form>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+
+      <mat-grid-list cols="3" rowHeight="1:1" class="sectors-tiles">
+        <mat-grid-tile class="sectors-tiles-item" *ngFor="let sector of sectorList">
+          <div routerLink="/customer/search">
+            <img class="sectors-tiles-item-image" [src]="sector.viewImage" [alt]="sector.viewValue">
+            <span class="sectors-tiles-item-description">{{sector.viewValue}}</span>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+    </div>
+  </div>
+</div>
 
 
-
+<div class="main-button">
+  <button mat-fab color="primary">
+    <mat-icon aria-label="Abrir mensagens">send</mat-icon>
+  </button>
 </div>
