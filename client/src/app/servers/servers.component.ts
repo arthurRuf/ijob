@@ -6,6 +6,21 @@ export interface Sector {
   viewImage: string;
 }
 
+export interface Field {
+  value: string;
+  viewValue: string;
+  sector: Sector;
+}
+
+export interface ServiceProvider {
+  value: number;
+  viewValue: string;
+  viewImage: string;
+  sector: Sector;
+  fields: Field[];
+  classification: number;
+}
+
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Field, Sector, ServiceProvider} from "../servers/servers.component";
 
 @Component({
   selector: 'app-customer-search',
@@ -7,7 +8,414 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerSearchComponent implements OnInit {
 
-  constructor() { }
+  providerList: ServiceProvider[] = [
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+    {
+      value: 1,
+      viewValue: 'José Musterfirma Encanadores',
+      viewImage: '../../assets/imgs/default.png',
+      sector: {
+        value: '1',
+        viewValue: 'Mecanico',
+        viewImage: '../../assets/imgs/default.png',
+      },
+      fields: [
+        {
+          value: '1',
+          viewValue: 'Eletrica',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        },
+        {
+          value: '2',
+          viewValue: 'Inspeçao Automotiva',
+          sector: {
+            value: '1',
+            viewValue: 'Mecanico',
+            viewImage: '../../assets/imgs/default.png',
+          }
+        }
+      ],
+      classification: 4,
+    },
+  ];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
