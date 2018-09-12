@@ -14,6 +14,8 @@ import { CustomerHomeComponent } from './customer-home/customer-home.component';
 import { ProviderHomeComponent } from './provider-home/provider-home.component';
 import {CustomerSearchComponent} from "./customer-search/customer-search.component";
 import {CustomerProfileComponent} from "./customer-profile/customer-profile.component";
+import {MessagesPageComponent} from "./messages-page/messages-page.component";
+import {MessagesViewComponent} from "./messages-view/messages-view.component";
 
 
 const routes: Routes = [
@@ -32,6 +34,10 @@ const routes: Routes = [
   //Provider
   { path: 'provider', redirectTo: '/provider/home', pathMatch: 'full'},
   { path: 'provider/home', component: ProviderHomeComponent },
+
+  //Messages
+  { path: 'messages', component: MessagesPageComponent },
+  { path: 'messages/view', component: MessagesViewComponent },
 
   { path: '**', component: PageNotFoundComponent }
 

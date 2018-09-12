@@ -60,6 +60,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CustomerSearchComponent } from './customer-search/customer-search.component';
 import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
 import { CommentListComponent } from './comment-list/comment-list.component';
+import { MessagesListComponent } from './messages-list/messages-list.component';
+import { MessagesViewComponent } from './messages-view/messages-view.component';
+import { MessagesPageComponent } from './messages-page/messages-page.component';
 
 
 
@@ -124,6 +127,9 @@ import { CommentListComponent } from './comment-list/comment-list.component';
     CustomerSearchComponent,
     CustomerProfileComponent,
     CommentListComponent,
+    MessagesListComponent,
+    MessagesViewComponent,
+    MessagesPageComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

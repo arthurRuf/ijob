@@ -2,16 +2,18 @@
 
   <div fxLayout="column" fxLayoutAlign="start stretch">
 
-    <mat-toolbar>MyJob</mat-toolbar>
+    <mat-toolbar>
+      MyJob
+      <span class="example-spacer"></span>
+      <mat-icon class="xxx" routerLink="/home">power_settings_new</mat-icon>
+    </mat-toolbar>
 
     <div>
       <form class="myjob-form search-form">
         <mat-form-field class="">
           <input class="search-form-input" matInput placeholder="Pesquisar" value="">
+          <mat-icon matSuffix routerLink="/customer/search">search</mat-icon>
         </mat-form-field>
-        <button mat-button routerLink="/customer/search">
-          <mat-icon aria-label="Pesquisar">search</mat-icon>
-        </button>
       </form>
     </div>
 
@@ -35,7 +37,7 @@
 
 
 <div class="main-button">
-  <button mat-fab color="primary">
+  <button mat-fab color="primary" routerLink="/messages">
     <mat-icon aria-label="Abrir mensagens">send</mat-icon>
   </button>
 </div>

@@ -34,6 +34,12 @@ export interface Comment {
   user: User;
 }
 
+export interface Message {
+  value: number;
+  text: string;
+  user: User;
+}
+
 
 @Component({
   selector: 'app-servers',
