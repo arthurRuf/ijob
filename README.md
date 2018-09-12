@@ -1,4 +1,4 @@
-# myjob
+# MyWork
 Projeto de Tópicos Especiais em Programação lecionada pelo Profº Carlos Henrique Bughi
 
 # Technologies Used
