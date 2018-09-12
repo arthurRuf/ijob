@@ -88,6 +88,17 @@
             <input matInput="password" placeholder="Repetir Senha" value="" required>
           </mat-form-field>
 
+          <div class="full-width">
+            <span>Distancia maxima dos Clientes *</span>
+            <mat-slider  class="full-width"
+                         max="200"
+                         min="5"
+                         step="5"
+                         thumbLabel="true"
+                         tickInterval="5">
+            </mat-slider>
+          </div>
+
           <mat-form-field class="full-width">
             <mat-select placeholder="Área e Especialidade(s)">
               <mat-option *ngFor="let sector of sectorList" [value]="sector.value">
