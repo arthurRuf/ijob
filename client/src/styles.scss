@@ -3,3 +3,41 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+
+.myjob-container {
+  padding-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.startup {
+  .startup-logo {
+    text-align: center;
+    margin-top: 35vh;
+  }
+
+  .startup-action {
+    position: fixed;
+    display: block;
+    bottom: 25px;
+  }
+}
+
+//General Form
+.myjob-form {
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .full-width {
+    width: 100%;
+  }
+
+  .myjob-form-action {
+    margin-top: 20px;
+  }
+
+}

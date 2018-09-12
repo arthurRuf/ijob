@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface Sector {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-servers',
