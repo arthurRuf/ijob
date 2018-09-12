@@ -8,7 +8,7 @@ import {Field, Sector, ServiceProvider} from "../servers/servers.component";
 })
 export class CustomerSearchComponent implements OnInit {
 
-  providerList: ServiceProvider[] = [
+  commentsList: ServiceProvider[] = [
     {
       value: 1,
       viewValue: 'José Musterfirma Encanadores',

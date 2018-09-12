@@ -1,39 +1,41 @@
-    <mat-toolbar><button mat-button routerLink="/customer/home"><mat-icon aria-label="Voltar">keyboard_arrow_left</mat-icon>Voltar</button>Pesquisa</mat-toolbar>
+<div class="search">
+  <mat-toolbar><button mat-button routerLink="/customer/home"><mat-icon aria-label="Voltar">keyboard_arrow_left</mat-icon>Voltar</button>Pesquisa</mat-toolbar>
 
-    <div>
-      <form class="myjob-form search-form">
-        <mat-form-field class="">
-          <input class="search-form-input" matInput placeholder="Pesquisar" value="">
-        </mat-form-field>
-        <button mat-button routerLink="/customer/search">
-          <mat-icon aria-label="Pesquisar">search</mat-icon>
-        </button>
-      </form>
-    </div>
+  <div>
+    <form class="myjob-form search-form">
+      <mat-form-field class="">
+        <input class="search-form-input" matInput placeholder="Pesquisar" value="">
+      </mat-form-field>
+      <button mat-button routerLink="/customer/search">
+        <mat-icon aria-label="Pesquisar">search</mat-icon>
+      </button>
+    </form>
+  </div>
 
 
-    <div class="search-results">
-      <div *ngFor="let provider of providerList">
-        <div class="search-results-item" fxLayout="row">
+  <div class="search-results">
+    <div *ngFor="let provider of commentsList">
+      <div class="search-results-item" fxLayout="row" routerLink="/customer/profile">
 
-            <div fxFlex="20">
-              <img class="search-results-item-image" [src]="provider.viewImage">
-            </div>
+        <div fxFlex="20">
+          <img class="search-results-item-image" [src]="provider.viewImage">
+        </div>
 
-            <div fxFlex="80">
-              <span class="no-wrap search-results-item-viewValue">{{provider.viewValue}}</span>
-              <span class="no-wrap">
+        <div fxFlex="80">
+          <span class="no-wrap search-results-item-viewValue">{{provider.viewValue}}</span>
+          <span class="no-wrap">
                 <span class="search-results-item-sector">{{provider.sector.viewValue}}:&nbsp;</span>
                 <span class="search-results-item-fields" *ngFor="let field of provider.fields">
                   {{field.viewValue}},&nbsp;
                 </span>
               </span>
-              <span class="search-results-item-classification">5 Estrelas</span>
-            </div>
-
-
+          <span class="search-results-item-classification">5 Estrelas</span>
         </div>
-        <mat-divider></mat-divider>
-      </div>
-    </div>
 
+
+      </div>
+      <mat-divider></mat-divider>
+    </div>
+  </div>
+
+</div>

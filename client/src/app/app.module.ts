@@ -58,6 +58,8 @@ import { ProviderHomeComponent } from './provider-home/provider-home.component';
 import { CustomerHomeComponent } from './customer-home/customer-home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CustomerSearchComponent } from './customer-search/customer-search.component';
+import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
+import { CommentListComponent } from './comment-list/comment-list.component';
 
 
 
@@ -120,6 +122,8 @@ import { CustomerSearchComponent } from './customer-search/customer-search.compo
     CustomerHomeComponent,
     PageNotFoundComponent,
     CustomerSearchComponent,
+    CustomerProfileComponent,
+    CommentListComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

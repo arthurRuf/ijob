@@ -21,6 +21,20 @@ export interface ServiceProvider {
   classification: number;
 }
 
+export interface User {
+  value: number;
+  viewValue: string;
+  viewImage: string;
+}
+
+
+export interface Comment {
+  value: number;
+  text: string;
+  user: User;
+}
+
+
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',
