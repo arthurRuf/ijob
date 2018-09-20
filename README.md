@@ -52,8 +52,15 @@ ng serve
 5.
 
 
-## Helpfull Links
+## Helpfull Links for FrontEnd
 1. Angular Basics (Complete Guide - Tutorial for Beginners) - https://www.youtube.com/watch?v=htPYk6QxacQ
+2. @angular/flex-layout - https://www.youtube.com/watch?v=geqjUtKJX5s
+3.
+4.
+5.
+
+## Helpfull Links for BackEnd
+1.
 2.
 3.
 4.
