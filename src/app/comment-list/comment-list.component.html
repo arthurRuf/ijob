@@ -1,0 +1,16 @@
+<div class="comments">
+  <div *ngFor="let comment of commentList">
+    <div class="comments-item" fxLayout="row">
+
+      <div fxFlex="20">
+        <img class="comments-item-image" [src]="comment.user.viewImage">
+      </div>
+
+      <div fxFlex="80">
+        <span class="no-wrap comments-item-name">{{comment.user.viewValue}}</span>
+        <span class="comments-item-text">{{comment.text}}:&nbsp;</span>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+  </div>
+</div>
