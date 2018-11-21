@@ -39,7 +39,6 @@ ng update @angular/core
 
 1. Go to the project folder and run
 ```
-cd client
 ng serve
 #Agora abra seu navegador de internet na página http://localhost:4200/
 ```
