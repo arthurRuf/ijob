@@ -5,10 +5,10 @@ import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-messages-view',
-    templateUrl: './messages-view.component.html',
-    styleUrls: ['./messages-view.component.scss']
+    templateUrl: './message-talk-view.component.html',
+    styleUrls: ['./message-talk-view.component.scss']
 })
-export class MessagesViewComponent implements OnInit {
+export class MessageTalkViewComponent implements OnInit {
 
     constructor(private _location: Location, private router: Router) {
     }

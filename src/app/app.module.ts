@@ -61,7 +61,7 @@ import { CustomerSearchComponent } from './customer-search/customer-search.compo
 import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
 import { CommentListComponent } from './comment-list/comment-list.component';
 import { MessagesListComponent } from './messages-list/messages-list.component';
-import { MessagesViewComponent } from './messages-view/messages-view.component';
+import { MessageTalkViewComponent } from './message-talk-view/message-talk-view.component';
 import { MessagesPageComponent } from './messages-page/messages-page.component';
 
 
@@ -128,7 +128,7 @@ import { MessagesPageComponent } from './messages-page/messages-page.component';
     CustomerProfileComponent,
     CommentListComponent,
     MessagesListComponent,
-    MessagesViewComponent,
+    MessageTalkViewComponent,
     MessagesPageComponent,
   ],
   providers: [],

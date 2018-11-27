@@ -4,18 +4,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LandingComponent } from './landing/landing.component';
 import { ServersComponent } from './servers/servers.component';
-import {SigninComponent} from "./signin/signin.component";
-import {SignupComponent} from "./signup/signup.component";
+import {SigninComponent} from './signin/signin.component';
+import {SignupComponent} from './signup/signup.component';
 
 //Customer
 import { CustomerHomeComponent } from './customer-home/customer-home.component';
 
 //Provider
 import { ProviderHomeComponent } from './provider-home/provider-home.component';
-import {CustomerSearchComponent} from "./customer-search/customer-search.component";
-import {CustomerProfileComponent} from "./customer-profile/customer-profile.component";
-import {MessagesPageComponent} from "./messages-page/messages-page.component";
-import {MessagesViewComponent} from "./messages-view/messages-view.component";
+import {CustomerSearchComponent} from './customer-search/customer-search.component';
+import {CustomerProfileComponent} from './customer-profile/customer-profile.component';
+import {MessagesPageComponent} from './messages-page/messages-page.component';
+import {MessageTalkViewComponent} from './message-talk-view/message-talk-view.component';
 
 
 const routes: Routes = [
@@ -37,7 +37,7 @@ const routes: Routes = [
 
   //Messages
   { path: 'messages', component: MessagesPageComponent },
-  { path: 'messages/view', component: MessagesViewComponent },
+  { path: 'messages/view', component: MessageTalkViewComponent },
 
   { path: '**', component: PageNotFoundComponent }
 

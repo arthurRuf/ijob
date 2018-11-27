@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MessagesViewComponent } from './messages-view.component';
+import { MessageTalkViewComponent } from './message-talk-view.component';
 
-describe('MessagesViewComponent', () => {
-  let component: MessagesViewComponent;
-  let fixture: ComponentFixture<MessagesViewComponent>;
+describe('MessageTalkViewComponent', () => {
+  let component: MessageTalkViewComponent;
+  let fixture: ComponentFixture<MessageTalkViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MessagesViewComponent ]
+      declarations: [ MessageTalkViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MessagesViewComponent);
+    fixture = TestBed.createComponent(MessageTalkViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
