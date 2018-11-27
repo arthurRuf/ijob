@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Field, Sector, ServiceProvider} from "../servers/servers.component";
+import {Field, Sector, ServiceProvider} from '../servers/servers.component';
 import { Router } from '@angular/router';
+import { ClassificationStart } from '../classification-starts/classification-starts.component';
 
 @Component({
   selector: 'app-customer-search',

@@ -23,10 +23,7 @@
       <span class="provider-info-services">Nº de Serviços Prestados:</span>
       <span class="provider-info-services-count">365</span>
 
-      <div class="provider-info-classification">
-        <span *ngFor="let i of [1,2,3,4,5]"><mat-icon *ngIf="i <= provider.classification" class="gold">star</mat-icon></span>
-        <span *ngFor="let i of [1,2,3,4,5]"><mat-icon *ngIf="i > provider.classification">star_border</mat-icon></span>
-      </div>
+      <app-classification-starts [classification]="provider.classification"></app-classification-starts>
 
     </div>
 

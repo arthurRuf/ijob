@@ -1,20 +1,17 @@
 <div class="bounds">
 
-  <div fxLayout="column" fxLayoutAlign="start stretch">
+  <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
+    MyWork
+    <!--<span class="example-spacer"></span>-->
+    <mat-icon fxFlexAlign="center flex-end" routerLink="/home">power_settings_new</mat-icon>
+  </mat-toolbar>
 
-    <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
-      MyWork
-      <!--<span class="example-spacer"></span>-->
-      <mat-icon fxFlexAlign="center flex-end" routerLink="/home">power_settings_new</mat-icon>
-    </mat-toolbar>
 
     <div>
-      <h1>Historico de Conversas</h1>
+      <h1 class="title">Historico de Conversas</h1>
       <app-messages-list></app-messages-list>
     </div>
 
-
-  </div>
 </div>
 
 

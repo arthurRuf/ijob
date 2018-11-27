@@ -21,7 +21,7 @@
    <div>
      <mat-grid-list cols="3" rowHeight="1:1" class="sectors-tiles">
        <mat-grid-tile class="sectors-tiles-item" *ngFor="let sector of sectorList">
-         <div \routerLink="/customer/search/">
+         <div routerLink="/customer/search/">
            <img class="sectors-tiles-item-image" [src]="sector.viewImage" [alt]="sector.viewValue">
            <span class="sectors-tiles-item-description">{{sector.viewValue}}</span>
          </div>

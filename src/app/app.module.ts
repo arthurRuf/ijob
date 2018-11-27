@@ -63,6 +63,7 @@ import { CommentListComponent } from './comment-list/comment-list.component';
 import { MessagesListComponent } from './messages-list/messages-list.component';
 import { MessageTalkViewComponent } from './message-talk-view/message-talk-view.component';
 import { MessagesPageComponent } from './messages-page/messages-page.component';
+import { ClassificationStartsComponent } from './classification-starts/classification-starts.component';
 
 
 
@@ -130,6 +131,7 @@ import { MessagesPageComponent } from './messages-page/messages-page.component';
     MessagesListComponent,
     MessageTalkViewComponent,
     MessagesPageComponent,
+    ClassificationStartsComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

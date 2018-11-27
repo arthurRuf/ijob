@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ServiceProvider} from "../servers/servers.component";
+import {ServiceProvider} from '../servers/servers.component';
 import { Router } from '@angular/router';
+import {ClassificationStartsComponent} from '../classification-starts/classification-starts.component';
 
 @Component({
   selector: 'app-customer-profile',
