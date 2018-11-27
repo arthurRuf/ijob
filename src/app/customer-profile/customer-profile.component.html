@@ -1,35 +1,32 @@
 <div class="bounds">
 
-  <div fxLayout="column" fxLayoutAlign=" center">
+  <div>
 
-    <mat-toolbar>
+    <mat-toolbar fxFlexAlign="flex-start center">
       <button mat-button class="botao_voltar" routerLink="/customer/home">
-        <mat-icon aria-label="Voltar">keyboard_arrow_left</mat-icon>
-        Voltar
+        <mat-icon aria-label="Voltar">keyboard_arrow_left</mat-icon>Voltar
       </button>
-      Pesquisa
+      <span>Prestador</span>
     </mat-toolbar>
 
-    <div class="provider-info">
+    <div class="provider-info" fxLayout="column" fxLayoutAlign="flex-start center">
       <img class="provider-info-image" [src]="provider.viewImage" style="max-height: 250px;">
       <span class="no-wrap textcenter provider-info-name">{{provider.viewValue}}</span>
 
-      <span class="provider-info-sector textcenter">{{provider.sector.viewValue}}:&nbsp;</span>
-      <mat-chip-list class="provider-info-fields textcenter">
+      <span class="provider-info-sector"><span class="bold">{{provider.sector.viewValue}}</span> especializado em:</span>
+
+      <mat-chip-list class="provider-info-fields">
         <mat-chip *ngFor="let field of provider.fields">{{field.viewValue}}</mat-chip>
       </mat-chip-list>
 
-      <span class="provider-info-classification textcenter">5 Estrelas</span>
       <br>
-      <span class="provider-info-services textcenter">Serviços</span>
-      <span class="provider-info-services-count textcenter">365</span>
+      <span class="provider-info-services">Nº de Serviços Prestados:</span>
+      <span class="provider-info-services-count">365</span>
 
-      <br>
-      <span class="provider-info-hire textcenter">
-        <button mat-fab color="primary" routerLink="/messages/view" style="margin-left: 255px">
-          <mat-icon aria-label="Enviar Mensagem">send</mat-icon>
-        </button>
-      </span>
+      <div class="provider-info-classification">
+        <span *ngFor="let i of [1,2,3,4,5]"><mat-icon *ngIf="i <= provider.classification" class="gold">star</mat-icon></span>
+        <span *ngFor="let i of [1,2,3,4,5]"><mat-icon *ngIf="i > provider.classification">star_border</mat-icon></span>
+      </div>
 
     </div>
 
@@ -39,6 +36,11 @@
         <app-comment-list></app-comment-list>
       </div>
     </div>
+
+
+    <button class="main-button" mat-fab color="primary" routerLink="/messages/view" >
+      <mat-icon aria-label="Enviar Mensagem">send</mat-icon>
+    </button>
 
   </div>
 </div>

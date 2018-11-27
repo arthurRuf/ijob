@@ -2,6 +2,7 @@ $messagesItemsBorderRadius: 10px;
 
 .messages-field {
   overflow-x: scroll;
+  padding-top: 20px;
 
   .message-field-item {
     padding: 10px 15px 10px 15px;
@@ -19,21 +20,34 @@ $messagesItemsBorderRadius: 10px;
     }
   }
 
-  .message-field-item.message-field-item-received {
+  .message-field-item.received-message {
+    align-self: flex-start;
     background-color: #f7fcbb;
     border-bottom-right-radius: $messagesItemsBorderRadius;
     border-top-right-radius: $messagesItemsBorderRadius;
+    margin-left: 0;
   }
 
-  .message-field-item.message-field-item-sent {
+  .message-field-item.sent-message {
+    align-self: flex-end;
     background-color: #ccfcbe;
     border-bottom-left-radius: $messagesItemsBorderRadius;
     border-top-left-radius: $messagesItemsBorderRadius;
+    margin-right: 0;
   }
 
 }
 
-
 .messages-write {
-  padding-bottom: 15px;
+  background: white;
+  padding-top: 5px;
+
+  position: sticky;
+  display: block;
+  padding-bottom: 10px;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
+
+

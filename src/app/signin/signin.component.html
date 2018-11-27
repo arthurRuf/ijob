@@ -2,7 +2,7 @@
 
   <div fxFill fxLayout="column" fxLayoutAlign="space-between center">
 
-    <mat-toolbar><button mat-button routerLink="home"><mat-icon aria-label="Voltar">keyboard_arrow_left</mat-icon> Voltar</button>Login</mat-toolbar>
+  <mat-toolbar><button mat-button routerLink="/home"><mat-icon aria-label="Voltar">keyboard_arrow_left</mat-icon>Voltar</button>Login</mat-toolbar>
 
     <div class="startup-logo">
       <h1>MyWork</h1>
@@ -22,7 +22,7 @@
             </mat-form-field>
 
             <div>
-              <a mat-raised-button color="primary" routerLink="/home">Login</a>
+              <a mat-raised-button color="primary" (click)="loginClick">Login</a>
             </div>
 
           </div>

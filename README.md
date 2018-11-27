@@ -24,12 +24,21 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 ```
 
-2. Go to the project folder and run
+2. Go to the project folder and run on Windows
+```
+npm install n -g
+n latest
+npm install -g @angular/cli sass #If your are running it on Linux or MacOS, you will need to run with SUDO
+npm install
+ng update @angular/cli
+ng update @angular/core
+```
+
+2. Go to the project folder and run on LINUX and MAC OS X
 ```
 sudo npm install n -g
 sudo n latest
-sudo npm install -g @angular/cli sass #If your are running it on Linux or MacOS, you will need to run with SUDO
-cd client
+sudo npm install -g @angular/cli sass 
 npm install
 ng update @angular/cli
 ng update @angular/core

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Sector } from '../servers/servers.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -29,12 +30,20 @@ export class SignupComponent implements OnInit {
     'Especialidade 5'
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.sectorList.unshift(
       {value: null, viewValue: '-- Nenhum --', viewImage: '../../assets/imgs/default.png'}
     );
   }
+
+    customerCreate() {
+        this.router.navigate(['/', 'customer', 'home']);
+    }
+
+    providerCreate() {
+        this.router.navigate(['/', 'provider', 'home']);
+    }
 
 }

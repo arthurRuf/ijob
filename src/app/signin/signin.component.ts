@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 
@@ -10,9 +11,19 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class SigninComponent implements OnInit {
 
-  constructor() { }
+    constructor(private router: Router) { }
 
   ngOnInit() {
   }
+
+  loginClick() {
+    alert('Loging in...');
+    //OR
+    this.router.navigate(['/', 'customer', 'home']);
+
+    //OR
+    this.router.navigate(['/', 'provider', 'home']);
+  }
+
 
 }

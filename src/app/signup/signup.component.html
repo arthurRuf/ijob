@@ -63,7 +63,7 @@
           </mat-form-field>
 
           <div class="mywork-form-action">
-            <a mat-raised-button color="primary" routerLink="/customer/home">Criar Conta</a>
+            <a mat-raised-button color="primary" (click)="customerCreate()">Criar Conta</a>
           </div>
         </mat-tab>
 
@@ -114,7 +114,7 @@
           </mat-selection-list>
 
           <div class="center mywork-form-action">
-            <a mat-raised-button color="primary" routerLink="/provider/home">Criar Conta</a>
+            <a mat-raised-button color="primary" (click)="providerCreate()">Criar Conta</a>
           </div>
         </mat-tab>
 

@@ -1,7 +1,6 @@
 .provider-info{
   .provider-info-image {
     max-height: 250px;
-    margin-left: 30px; 
   }
 
   .provider-info-name {
@@ -16,7 +15,9 @@
 
   }
   .provider-info-classification {
-
+    .gold {
+      color: goldenrod;
+    }
   }
 
   .provider-info-services {
@@ -25,12 +26,9 @@
   .provider-info-services-count {
 
   }
-    .provider-info-hire textcenter{
-        
-        float: right;
-    }
 
 }
+
 
 .comments-box {
 
@@ -42,3 +40,5 @@
     height: 250px;
   }
 }
+
+

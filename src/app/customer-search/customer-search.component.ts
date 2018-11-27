@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Field, Sector, ServiceProvider} from "../servers/servers.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-customer-search',

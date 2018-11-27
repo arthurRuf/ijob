@@ -1,32 +1,32 @@
+<!--Visualiza a conversa com um su�rio-->
 <div fxFill class="bounds">
 
-  <div fxFill fxLayout="column" fxLayoutAlign="space-between stretch" >
+  <mat-toolbar>
+    <button mat-button class="botao_voltar" (click)="goBack()">
+      <mat-icon aria-label="Voltar">keyboard_arrow_left</mat-icon>Voltar
+    </button>
+    Mariana da Silva
+  </mat-toolbar>
 
-    <mat-toolbar>
-      <button mat-button class="botao_voltar" (click)="goBack()">
-        <mat-icon aria-label="Voltar">keyboard_arrow_left</mat-icon>
-        Voltar
-      </button>
-      Mariana da Silva
-    </mat-toolbar>
 
-    <div class="messages-field" fxLayout="column" fxLayoutAlign="start start">
-      <div fxFlexAlign="start" class="message-field-item message-field-item-received">
-        <span class="message-field-item-name">Mariana da Silva</span>
-        <span class="message-field-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at beatae consequatur cupiditate exercitationem, mollitia placeat. Assumenda at cupiditate dignissimos doloremque ducimus, eaque ex, fuga magni quaerat quidem unde veniam!</span>
+  <div>
+
+    <div class="messages-field">
+      <div *ngFor="let i of [1,2,3,4,5,6,7,8,9]" fxLayout="column" fxLayoutAlign="flex-start center">
+        <div class="message-field-item" [ngClass]="{'received-message': isReceivedMessage(i),  'sent-message': isSentMessage(i) }">
+          <span class="message-field-item-name">Mariana da Silva</span>
+          <span class="message-field-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at beatae consequatur cupiditate exercitationem, mollitia placeat. Assumenda at cupiditate dignissimos doloremque ducimus, eaque ex, fuga magni quaerat quidem unde veniam!</span>
+        </div>
       </div>
-      <div fxFlexAlign="end" class="message-field-item message-field-item-sent">
-        <span class="message-field-item-name">Voce</span>
-        <span class="message-field-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at beatae consequatur cupiditate exercitationem, mollitia placeat. Assumenda at cupiditate dignissimos doloremque ducimus, eaque ex, fuga magni quaerat quidem unde veniam!</span>
-      </div>
+
     </div>
 
-    <div class="messages-write" fxLayout="column" fxLayoutAlign="start none" >
-      <form class="mywork-form">
+    <div class="messages-write">
+      <form class="mywork-form" fxLayout="column" fxLayoutAlign="start none" >
 
         <mat-form-field class="full-width">
           <input matInput #message maxlength="256" placeholder="Mensagem">
-          <mat-icon matSuffix>send</mat-icon>
+          <mat-icon matSuffix><span (click)="sendMessageClick();">send</span></mat-icon>
           <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
           <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
         </mat-form-field>

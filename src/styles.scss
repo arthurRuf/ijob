@@ -9,10 +9,10 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
 }
 
 .main-button {
-  position: fixed;
-  display: block;
-  bottom: 15px;
-  right: 15px;
+  position: fixed !important;
+  display: block !important;
+  bottom: 15px !important;
+  right: 15px !important;
 }
 
 .no-wrap {
@@ -57,4 +57,8 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
 
 .botao_voltar{
    left: -30px;
+}
+
+.bold {
+  font-weight: bold;
 }

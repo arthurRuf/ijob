@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Message } from "../servers/servers.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-messages-list',
@@ -74,7 +75,7 @@ export class MessagesListComponent implements OnInit {
     },
   ]
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
