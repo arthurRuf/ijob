@@ -13,22 +13,22 @@
 
 
   <div class="search-results">
-    <div *ngFor="let provider of commentsList">
+    <div *ngFor="let prestador of prestadoresList">
       <div class="search-results-item" fxLayout="row" routerLink="/customer/profile">
 
         <div fxFlex="20">
-          <img class="search-results-item-image" [src]="provider.viewImage">
+          <img class="search-results-item-image" [src]="prestador.viewImage">
         </div>
 
         <div class="search-results-item-more-info" fxFlex="80">
-          <span class="no-wrap search-results-item-viewValue">{{provider.viewValue}}</span>
+          <span class="no-wrap search-results-item-viewValue">{{prestador.nome}}</span>
           <span class="no-wrap">
-                <span class="search-results-item-sector">{{provider.sector.viewValue}}:&nbsp;</span>
-                <span class="search-results-item-fields" *ngFor="let field of provider.fields">
-                  {{field.viewValue}},&nbsp;
+                <span class="search-results-item-sector">{{prestador.area.nome}}:&nbsp;</span>
+                <span class="search-results-item-fields" *ngFor="let especialidade of especialidadesList">
+                  {{especialidade.nome}},&nbsp;
                 </span>
               </span>
-          <app-classification-stars class="search-results-item-classification" [classification]="provider.classification"></app-classification-stars>
+          <app-classification-stars class="search-results-item-classification" [classification]="prestador.pontuacao"></app-classification-stars>
         </div>
 
 

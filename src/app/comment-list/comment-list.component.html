@@ -3,11 +3,11 @@
     <div class="comments-item" fxLayout="row">
 
       <div fxFlex="20">
-        <img class="comments-item-image" [src]="comment.user.viewImage">
+        <img class="comments-item-image" src="../../assets/imgs/default.png">
       </div>
 
       <div fxFlex="80">
-        <span class="no-wrap comments-item-name">{{comment.user.viewValue}}</span>
+        <span class="no-wrap comments-item-name">{{comment.user.nome}}</span>
         <span class="comments-item-text">{{comment.text}}:&nbsp;</span>
       </div>
     </div>

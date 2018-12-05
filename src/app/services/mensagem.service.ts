@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Sector} from '../servers/servers.component';
-import {Mensagem} from '../types.service';
+import {Mensagem} from './types.service';
 
 const API = 'http://localhost:8080/mywork/api';
 
@@ -40,7 +39,7 @@ export class MensagemService {
 
     postMensagem(id: number, mensagem: Mensagem) {
         return this.http
-            .put(API + `/mensagem/${id}`, Mensagem);
+            .put(API + `/mensagem/${id}`, mensagem);
     }
 
 }

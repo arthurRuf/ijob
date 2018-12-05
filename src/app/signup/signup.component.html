@@ -101,8 +101,8 @@
 
           <mat-form-field class="full-width">
             <mat-select placeholder="Área e Especialidade(s)">
-              <mat-option *ngFor="let sector of sectorList" [value]="sector.value">
-                {{sector.viewValue}}
+              <mat-option *ngFor="let area of areasList" [value]="">
+                {{area.nome}}
               </mat-option>
             </mat-select>
           </mat-form-field>

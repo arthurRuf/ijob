@@ -3,11 +3,11 @@
     <div class="messages-item" fxLayout="row" routerLink="/messages/view">
 
       <div fxFlex="20">
-        <img class="messages-item-image" [src]="message.user.viewImage">
+        <img class="messages-item-image" [src]="message.pessoaRemetente.viewImage">
       </div>
 
       <div fxFlex="80">
-        <span class="no-wrap messages-item-name">{{message.user.viewValue}}</span>
+        <span class="no-wrap messages-item-name">{{message.pessoaRemetente.nome}}</span>
         <span class="messages-item-text">{{message.text}}:&nbsp;</span>
       </div>
 

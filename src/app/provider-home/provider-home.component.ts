@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {AllServicesService} from '../all-services.service';
-import {Sector} from '../servers/servers.component';
+import {Area} from '../services/types.service';
+import {AreaService} from '../services/area.service';
 
 @Component({
     selector: 'app-provider-home',
@@ -10,15 +10,14 @@ import {Sector} from '../servers/servers.component';
 })
 export class ProviderHomeComponent implements OnInit {
 
-    sectors: Sector[] = [];
+    areas: Area[] = [];
 
-    constructor(private router: Router, private allServices: AllServicesService) {
+    constructor(private router: Router, private areaService: AreaService) {
     }
 
     ngOnInit() {
-        this.allServices.getAllAreas()
-            .subscribe(sectors => this.sectors = sectors,
-                err => console.log(err));
+        this.areaService.getAllAreas()
+            .subscribe(areas => this.areas = areas);
     }
 
 }

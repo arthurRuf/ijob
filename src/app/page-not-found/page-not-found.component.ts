@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Location} from "@angular/common";
+import {Location} from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class PageNotFoundComponent implements OnInit {
 
-  constructor(private _location: Location, private router : Router) { }
+  constructor(private _location: Location, private router: Router) { }
 
   ngOnInit() {
   }

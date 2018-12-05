@@ -21,7 +21,7 @@ export class MessageTalkViewComponent implements OnInit {
     }
 
     sendMessageClick() {
-        alert('Send Message Button!');
+        alert('Send Mensagem Button!');
     }
 
     isReceivedMessage(i: number): boolean {

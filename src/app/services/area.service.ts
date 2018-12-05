@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Area} from '../types.service';
+import {Area} from './types.service';
 
 
 const API = 'http://localhost:8080/mywork/api';

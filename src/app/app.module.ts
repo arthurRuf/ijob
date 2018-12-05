@@ -52,7 +52,6 @@ import {
 //Components
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {ServersComponent} from './servers/servers.component';
 
 import {LandingComponent} from './landing/landing.component';
 import {SigninComponent} from './signin/signin.component';
@@ -123,7 +122,6 @@ import { ClassificationStarsComponent } from './classification-stars/classificat
     ],
     declarations: [
         AppComponent,
-        ServersComponent,
         LandingComponent,
         SigninComponent,
         SignupComponent,
