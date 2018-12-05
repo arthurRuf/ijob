@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Sector} from './servers/servers.component';
+import {Area} from './types.service';
 
 const API = 'http://localhost:8080/mywork/api';
 
@@ -13,7 +13,7 @@ export class AllServicesService {
 
   getAllAreas() {
       return this.http
-          .get<Sector[]>(API + '/area');
+          .get<Area[]>(API + '/area');
   }
 
 }
