@@ -8,7 +8,7 @@ Projeto de Tópicos Especiais em Programação lecionada pelo Profº Carlos Henr
 
 # Server
 
-Checkout the Server Repository under (https://github.com/eugaf/mywork-server)[https://github.com/eugaf/mywork-server]
+Checkout the Server Repository under (https://github.com/eugaf/mywork-netbeans/)[https://github.com/eugaf/mywork-netbeans/]
 
 # Client
 
