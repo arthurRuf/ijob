@@ -14,7 +14,7 @@ export interface Especialidade {
 }
 
 export interface Pessoa {
-    value: number;
+    id: number;
     nome: string;
     email: string;
     senha: string;
