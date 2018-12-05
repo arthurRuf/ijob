@@ -11,7 +11,7 @@ import {Area, Avaliacao, Cliente, Prestador} from '../services/types.service';
 export class CustomerProfileComponent implements OnInit {
 
     prestador: Prestador = {
-        value: 1,
+        id: 1,
         nome: 'José Mustermann',
         email: 'jose@musterfirma.com.br',
         senha: '1a2b3c4d5e',
