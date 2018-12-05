@@ -24,9 +24,9 @@ export interface Pessoa {
 }
 
 export interface Comment {
-    value: number;
+    id: number;
     text: string;
-    user: Pessoa;
+    pessoa: Pessoa;
 }
 
 export interface Mensagem {

@@ -10,25 +10,25 @@
     </mat-toolbar>
 
     <div class="provider-info" fxLayout="column" fxLayoutAlign="flex-start center">
-      <img class="provider-info-image" [src]="provider.viewImage" style="max-height: 250px;">
-      <span class="no-wrap textcenter provider-info-name">{{provider.viewValue}}</span>
+      <img class="provider-info-image" [src]="prestador.viewImage" style="max-height: 250px;">
+      <span class="no-wrap textcenter provider-info-name">{{prestador.nome}}</span>
 
-      <span class="provider-info-sector"><span class="bold">{{provider.sector.viewValue}}</span> especializado em:</span>
+      <span class="provider-info-sector"><span class="bold">{{prestador.area[0].nome}}</span> especializado em:</span>
 
-      <mat-chip-list class="provider-info-fields">
-        <mat-chip *ngFor="let field of provider.fields">{{field.viewValue}}</mat-chip>
+      <mat-chip-list class="provider-info-fields" fxLayout="row" fxLayoutAlign="center center">
+        <mat-chip *ngFor="let field of especialidadesList">{{field.nome}}</mat-chip>
       </mat-chip-list>
 
       <br>
       <span class="provider-info-services">Nº de Serviços Prestados:</span>
       <span class="provider-info-services-count">365</span>
 
-      <app-classification-stars [classification]="provider.classification"></app-classification-stars>
+      <app-classification-stars [classification]="prestador.pontuacao"></app-classification-stars>
 
     </div>
 
     <div class="comments-box">
-      <h1>Comentarios</h1>
+      <h1>Comentários</h1>
       <div class="comments-box-wrap">
         <app-comment-list></app-comment-list>
       </div>

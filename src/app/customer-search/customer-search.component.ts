@@ -73,6 +73,7 @@ export class CustomerSearchComponent implements OnInit {
         },
 
     ];
+
     especialidadesList: Especialidade[] = [
         {
             id: 1,

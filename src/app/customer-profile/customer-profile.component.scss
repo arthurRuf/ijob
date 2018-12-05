@@ -1,4 +1,9 @@
-.provider-info{
+.provider-info {
+
+  .mat-chip-list-wrapper {
+    justify-content: center !important;
+  }
+
   .provider-info-image {
     max-height: 250px;
   }
@@ -26,7 +31,6 @@
 
 }
 
-
 .comments-box {
 
   padding-left: 20px;
@@ -37,5 +41,3 @@
     height: 250px;
   }
 }
-
-

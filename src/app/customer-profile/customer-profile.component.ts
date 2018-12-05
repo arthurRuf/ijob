@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {ClassificationStarsComponent} from '../classification-stars/classification-stars.component';
-import {Area, Avaliacao, Cliente, Prestador} from '../services/types.service';
+import {Area, Avaliacao, Cliente, Especialidade, Prestador} from '../services/types.service';
 
 @Component({
     selector: 'app-customer-profile',
@@ -30,6 +30,21 @@ export class CustomerProfileComponent implements OnInit {
         Historico: [],
         servico: 'Olá mundo',
     };
+
+    especialidadesList: Especialidade[] = [
+        {
+            id: 1,
+            nome: 'Especialidade 1'
+        },
+        {
+            id: 2,
+            nome: 'Especialidade 2'
+        },
+        {
+            id: 3,
+            nome: 'Especialidade 3'
+        },
+    ];
 
     constructor() {
     }
